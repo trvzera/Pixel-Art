@@ -13,14 +13,20 @@
 <body>
   <main id="main">
     <section id="filter">
-      <div id="pallete">
-        <div class="pen" aria-label="Definir cor branca" onclick="setPenColor('var(--black2)')"></div>
-        <div class="pen" aria-label="Definir cor preta" onclick="setPenColor('var(--white2)')"></div>
-        <div class="pen" aria-label="Definir cor azul" onclick="setPenColor('var(--blue)')"></div>
-        <div class="pen" aria-label="Definir cor azul" onclick="setPenColor('var(--pink)')"></div>
-        <div class="pen" aria-label="Definir cor azul" onclick="setPenColor('var(--purple)')"></div>
-
+      <div id="header">
+        <h1 id="title">Pixel Art</h1>
+        <h2 id="subtitle">Modo edição</h2>
       </div>
+      <p id="colorTitle">Selecione uma cor</p>
+      <div id="pallete">
+        <div class="pen" aria-label="Definir cor branca" onclick="setPenColor('var(--black2)', this)"></div>
+        <div class="pen" aria-label="Definir cor preta" onclick="setPenColor('var(--white2)', this)"></div>
+        <div class="pen" aria-label="Definir cor azul" onclick="setPenColor('var(--blue)', this)"></div>
+        <div class="pen" aria-label="Definir cor rosa" onclick="setPenColor('var(--pink)', this)"></div>
+        <div class="pen" aria-label="Definir cor roxa" onclick="setPenColor('var(--purple)', this)"></div>
+      </div>
+      <input id="colorPicker" type="color" onchange="setPenColor(this.value, this)">
+
       <div id="art">
         <div class="row">
           <div class="pixel" onclick="setPixelColor(this)"></div>
@@ -103,10 +109,16 @@
           <div class="pixel" onclick="setPixelColor(this)"></div>
         </div>
       </div>
-      <button id="reset">
-        <i class="fa-solid fa-arrow-rotate-left"></i>
-        <p>Reiniciar</p>
-      </button>
+      <div id="container">
+        <button id="reset">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+          <p>Reiniciar</p>
+        </button>
+        <button id="removeBorder" onclick="removeBorder()">
+          <i class="fa-solid fa-border-none"></i>
+          <p>Visualizar</p>
+        </button>
+      </div>
     </section>
   </main>
 </body>
