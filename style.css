@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s cubic-bezier(0.74, 0.2, 0.29, 0.74);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --black: #1c1c1e;
+  --black2: #282b2c;
+  --black3: #212124;
+  --white: #e5e5ea;
+  --white2: #f5f5f5;
+  --white3: #dbdbdb;
+  --blue: #669bbc;
+  --blue2: #4d80a0;
+  --pink: #ffc8dd;
+  --pink2: #ffb4d1;
+  --purple: #c77dff;
+  --purple2: #bf71fa;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--black2);
+}
+
+#filter {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  backdrop-filter: brightness(50px);
+}
+
+#art {
+  display: table;
+  border-spacing: 1px;
+  background-color: var(--black);
+  border: 5px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#row {
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#reset {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-synthesis-weight: 0.7rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#reset:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pen {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pen:first-of-type {
+  background-color: var(--black2);
+  border: 3px solid var(--black3);
+}
+
+.pen:nth-of-type(2) {
+  background-color: var(--white2);
+  border: 3px solid var(--white3);
+}
+
+.pen:nth-of-type(3) {
+  background-color: var(--blue);
+  border: 3px solid var(--blue2);
+}
+
+.pen:nth-of-type(4) {
+  background-color: var(--pink);
+  border: 3px solid var(--pink2);
+}
+
+.pen:nth-of-type(5) {
+  background-color: var(--purple);
+  border: 3px solid var(--purple2);
+}
