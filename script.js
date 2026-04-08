@@ -8,6 +8,7 @@ var art = document.getElementById("art");
 var removeBorderBtn = document.getElementById("removeBorder");
 var colorTitle = document.getElementById("colorTitle");
 var subtitle = document.getElementById("subtitle");
+var developer = document.getElementById("developer");
 
 
 function setPenColor(pen, element) {
@@ -24,6 +25,8 @@ function setPenColor(pen, element) {
   reset.style.borderColor = penColor;
   removeBorderBtn.style.borderColor = penColor;
   art.style.borderColor = penColor;
+  subtitle.style.color = penColor;
+  developer.style.color = penColor;
   
   if (penColor == "var(--black2)") {
     reset.style.color = "black";
