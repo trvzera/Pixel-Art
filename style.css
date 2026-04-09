@@ -31,6 +31,12 @@ main {
   background-color: var(--black2);
 }
 
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0px;
+  border-radius: 50%;
+}
+
+
 #filter {
   height: 100%;
   width: 100%;
@@ -93,7 +99,7 @@ main {
 
 .pixel {
   display: table-cell;
-  background-color: white;
+  background-color: var(--white);
   width: 40px;
   height: 40px;
   border-radius: 5px;
