@@ -31,12 +31,6 @@ main {
   background-color: var(--black2);
 }
 
-input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0px;
-  border-radius: 50%;
-}
-
-
 #filter {
   height: 100%;
   width: 100%;
@@ -196,12 +190,12 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   border: 3px solid var(--purple2);
 }
 
-#colorPicker {
-  width: 80px;
-  height: 40px;
-  border-radius: 10px;
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0px;
   outline: none;
+  outline: hidden;
   border: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin: 0;
 }

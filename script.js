@@ -63,3 +63,4 @@ function removeBorder() {
     subtitle.innerHTML = "Modo edição";
   }
 }
+
