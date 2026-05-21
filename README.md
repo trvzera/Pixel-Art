@@ -1,3 +1,10 @@
+> **EN:** Browser-based 10×10 pixel art editor (HTML, CSS, JavaScript). Started at a Code Club training day; later improved with palette, reset, and borderless preview.
+>
+> *The rest of this README is in Brazilian Portuguese (pt-BR).*
+
+
+---
+
 # Pixel Art
 
 Editor de pixel art no navegador: grade 10×10, clique para pintar cada quadrado. Projeto simples em HTML, CSS e JavaScript.
